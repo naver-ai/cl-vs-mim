@@ -1,7 +1,11 @@
 # (ICLR'23) [What Do Self-Supervised Vision Transformers Learn?](https://openreview.net/forum?id=azCKuYyS74)
 
 ## Authors
-Namuk Park<sup>1*</sup>, Wonjae Kim<sup>2</sup>, Byeongho Heo<sup>2</sup>, Taekyung Kim<sup>2</sup>, Sangdoo Yun<sup>2</sup>
+[Namuk Park](https://www.namukpark.com/)<sup>1*</sup>, 
+[Wonjae Kim](https://wonjae.kim/)<sup>2</sup>, 
+[Byeongho Heo](https://sites.google.com/view/byeongho-heo/home)<sup>2</sup>, 
+[Taekyung Kim](https://scholar.google.es/citations?user=u-9bdkwAAAAJ)<sup>2</sup>, 
+[Sangdoo Yun](https://sangdooyun.github.io/)<sup>2</sup>
 
 <sup>1</sup> <sub>Prescient Design, Genentech</sub>
 <sup>2</sup> <sub>NAVER AI LAB</sub> 
