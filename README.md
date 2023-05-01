@@ -129,7 +129,7 @@ If you find this useful, please consider citing 📑 the paper and starring 🌟
 }
 ```
 
-Please also consider citing the following paper (["How Do Vision Transformers Work?" (ICLR 2022 Spotlight)](https://arxiv.org/abs/2202.06709), [code and summary :octocat:](https://github.com/xxxnell/how-do-vits-work)) if you find useful in analysis techniques such as Fourier analysis of representations.
+Please also consider citing the following paper (["How Do Vision Transformers Work?" (ICLR 2022 Spotlight)](https://arxiv.org/abs/2202.06709), [code and summary :octocat:](https://github.com/xxxnell/how-do-vits-work)) if you find it useful for analysis techniques, such as Fourier analysis of representations.
 
 ```
 @inproceedings{park2022how,
