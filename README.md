@@ -24,7 +24,7 @@ These findings consistently indicate that ***CL is an image-level approach, and 
 
 <!-- Arch Fig -->
 <p align="center">
-<img src="resources/overview.png" style="width:90%;">
+<img src="resources/overview.png" style="width:95%;">
 </p>
 
 
@@ -36,14 +36,14 @@ Let's find the details below 👇
 
 <!-- Fig 2 -->
 <p align="center">
-<img src="resources/self-attention.png" style="width:90%;">
+<img src="resources/self-attention.png" style="width:95%;">
 </p>
 
 The self-attentions of CL and MIM reveal strikingly different behaviors. CL's self-attention captures global information, yet it generates homogeneous attention maps for all query tokens and heads. This implies that it primarily focuses on global invariant aspects and object shapes, possibly sacrificing interaction diversity among tokens. Conversely, MIM's self-attention mainly focuses on local areas, adeptly capturing neighboring similar tokens. This suggests that MIM excels at discerning the similarities and differences between tokens, outshining CL in this regard.
 
 <!-- Fig 1. -->
 <p align="center">
-<img src="resources/behaviour.png" style="width:90%;">
+<img src="resources/behaviour.png" style="width:95%;">
 </p>
 
 Consequently, CL and MIM behave differently. CL excels at linear probing tasks due to its ability to capture shapes, which helps recognize objects and distinguish images. Although MIM preserves the local information, the correlation with objects or content might not be as strong as with shapes. Furthermore, MIM is more scalable than CL as it effectively leverages diverse representations. Lastly, CL may not be suitable for dense prediction tasks, as self-attention maps and token features are uniform with respect to their spatial coordinates.
@@ -53,7 +53,7 @@ Consequently, CL and MIM behave differently. CL excels at linear probing tasks d
 
 <!-- Fig E.2 and Fig 8. --> 
 <p align="center">
-<img src="resources/representation.png" style="width:90%;">
+<img src="resources/representation.png" style="width:95%;">
 </p>
 
 Analyzing representations from a token-level perspective reveals distinct differences between CL and MIM. CL processes all tokens in unison, while MIM handles each token individually. Consistent with their performance in linear probing tasks, CL effectively separates images by capturing object shapes, even though the tokens form clusters for each image. In contrast, MIM's tokens are intermingled, suggesting that they can recognize individual tokens well but lack linear separability. Likewise, CL exhibits a texture bias, while MIM is more shape-biased. This means that CL is robust against small data perturbations.
@@ -63,7 +63,7 @@ Analyzing representations from a token-level perspective reveals distinct differ
 
 <!-- Fig 11 and Fig  --> 
 <p align="center">
-<img src="resources/architecture.png" style="width:90%;">
+<img src="resources/architecture.png" style="width:95%;">
 </p>
 
 Later layers of CL and early layers of MIM play significant roles. Interestingly, this aligns with the general consensus that early layers typically capture low-level features, such as local patterns, high-frequency signals, and texture information, while later layers capture global patterns, low-frequency signals, and shape information.
@@ -75,7 +75,7 @@ Based on these observations, we also discover that CL and MIM can complement eac
 
 <!-- summary figure --> 
 <p align="center">
-<img src="resources/summary.png" style="width:90%;">
+<img src="resources/summary.png" style="width:85%;">
 </p>
 
 In summary, we demonstrate that CL and MIM are complementary in three aspects: self-attention, representation, and architecture. This implies that CL learns image-level invariant information, while MIM learns token-level similarity information, leading to differences in their behaviors.
