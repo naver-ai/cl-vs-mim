@@ -1,0 +1,9 @@
+--extra-index-url https://download.pytorch.org/whl/cu117
+torch==1.13.1+cu117
+timm==0.5.4
+matplotlib==3.7.1
+scikit-learn==1.2.2
+fastai==2.7.12
+einops==0.6.0
+gdown==4.7.1
+yacs==0.1.8
