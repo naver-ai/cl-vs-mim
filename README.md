@@ -1,6 +1,6 @@
 # What Do Self-Supervised Vision Transformers Learn? 
 
-[[paper](https://openreview.net/forum?id=azCKuYyS74), [poster](https://github.com/xxxnell/cl-vs-mim-storage/blob/main/resources/cl_vs_mim_iclr2023_poster.pdf), [slide](https://github.com/xxxnell/cl-vs-mim-storage/blob/main/resources/cl_vs_mim_talk.pdf)]
+[[arXiv](https://arxiv.org/abs/2305.00729), [poster](https://github.com/xxxnell/cl-vs-mim-storage/blob/main/resources/cl_vs_mim_iclr2023_poster.pdf), [slide](https://github.com/xxxnell/cl-vs-mim-storage/blob/main/resources/cl_vs_mim_talk.pdf)]
 
 [Namuk Park](https://www.namukpark.com/)<sup>1*</sup>, 
 [Wonjae Kim](https://wonjae.kim/)<sup>2</sup>, 
@@ -14,7 +14,7 @@
 
 <br/>
 
-This repository provides a PyTorch implementation of ["What Do Self-Supervised Vision Transformers Learn (ICLR 2023)."](https://openreview.net/forum?id=azCKuYyS74) In this paper, we delve into the properties of contrastive learning (CL) and masked image modeling (MIM) methods by comparing their learning patterns, providing valuable insights into the unique and complementary aspects of each approach. Specifically, we demonstrate the following:
+This repository provides a PyTorch implementation of ["What Do Self-Supervised Vision Transformers Learn (ICLR 2023)."](https://arxiv.org/abs/2305.00729) In this paper, we delve into the properties of contrastive learning (CL) and masked image modeling (MIM) methods by comparing their learning patterns, providing valuable insights into the unique and complementary aspects of each approach. Specifically, we demonstrate the following:
 
 1. CL primarily captures global patterns, while MIM focuses on local patterns;
 2. CL is more shape-oriented, while MIM is more texture-oriented; and
@@ -78,14 +78,9 @@ Based on these observations, we also discover that CL and MIM can complement eac
 <img src="resources/summary.png" style="width:85%;">
 </p>
 
-In summary, we demonstrate that CL and MIM are complementary in three aspects: self-attention, representation, and architecture. This implies that CL learns image-level invariant information, while MIM learns token-level similarity information, leading to differences in their behaviors.
+In summary, we demonstrate that ***CL and MIM are complementary*** in three aspects: self-attention, representation, and architecture. This implies that CL learns image-level invariant information, while MIM learns token-level similarity information, leading to differences in their behaviors.
 
-
-<!--- extra claims -->
-
-<!-- Additionally, you can find the following findings in this papers: 
-
---> 
+***Okay, so what? Which method is supposed to be better?*** To put it simply, MIM is the better choice if we have access to a lot of resources, such as large model sizes and long training times. If not, CL is a good alternative. The hybrid model performs best, but it's significantly more expensive.
 
 
 ## Getting Started
@@ -105,15 +100,15 @@ Install all the dependencies by running the command `pip install -r requirements
 
 The pretrained models from [MoCo-v3](https://github.com/facebookresearch/moco-v3) and [SimMIM](https://github.com/microsoft/SimMIM) are provided. The weights are automatically downloaded when you run the code. 
 
-Codes will be available soon. Stay tuned.
 
-<!-- ## Self-Attention Analysis --> 
+## Self-Attention Analysis
 
-<!-- attention map visualization, attention distance, normalized mutual information -->
+Please refer to the `self_attention_analysis.ipynb` (available on [Colab notebook](https://colab.research.google.com/github/naver-ai/cl-vs-mim/blob/main/self_attention_analysis.ipynb)) for analyzing the self-attention behaviors. This notebook includes snippets for visualizing attention map, calculating attention distance, and measuring normalized mutual information. Run all cells to analyze the properties of self-attentions. 
 
-<!-- ## Representation Analysis -->
 
-<!-- t-sne, svd, fourier --> 
+## Representation Analysis
+
+Please refer to the `representation_analysis.ipynb` (available on [Colab notebook](https://colab.research.google.com/github/naver-ai/cl-vs-mim/blob/main/representation_analysis.ipynb)) for analyzing the representational behaviors. This notebook includes snippets for Fourier analysis and token-level t-SNE visualization. Run all cells to analyze the properties of representations. 
 
 
 ## Citation
@@ -139,6 +134,7 @@ Please also consider citing the following paper (["How Do Vision Transformers Wo
   year={2022}
 }
 ```
+
 
 ## License
 
