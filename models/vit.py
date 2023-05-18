@@ -9,9 +9,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 from timm.data import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
-# from .helpers import build_model_with_cfg, overlay_external_default_cfg
 from timm.models.layers import PatchEmbed, Mlp, DropPath, trunc_normal_, lecun_normal_
-# from .registry import register_model
 
 _logger = logging.getLogger(__name__)
 
@@ -201,14 +199,9 @@ class VisionTransformer(nn.Module):
         
         zs.append(x)
 
-#         print("embedding: ")
-#         print(x)
         for i, block in enumerate(self.blocks):
             x1, x2, attn, attn_ft = block(x)
             x = x2
-
-#             print("%s th block" % i)
-#             print(x)
 
             zs.append(x1)
             zs.append(x2)
