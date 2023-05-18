@@ -119,7 +119,7 @@ If you find this useful, please consider citing 📑 the paper and starring 🌟
 @inproceedings{park2023ssl,
   title={What Do Self-Supervised Vision Transformers Learn?},
   author={Park, Namuk and Kim, Wonjae and Heo, Byeongho and Kim, Taekyung and Yun, Sangdoo},
-  booktitle={The Eleventh International Conference on Learning Representations},
+  booktitle={International Conference on Learning Representations},
   year={2023}
 }
 ```
