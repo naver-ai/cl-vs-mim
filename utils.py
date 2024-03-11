@@ -45,7 +45,7 @@ def download(url, path, force=False):
     from pathlib import Path
     from tqdm import tqdm
 
-    # This snibbet is based on https://stackoverflow.com/a/37573701
+    # This snippet is based on https://stackoverflow.com/a/37573701
     
     if not force and os.path.exists(path):
         return
